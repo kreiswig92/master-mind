@@ -1,0 +1,135 @@
+//colors
+
+$boardBase : #687779
+$pegboardBase: #e1e2e1
+$emptyPeg: #007677
+
+*
+  margin: 0px
+  padding: 0px
+
+body
+  height: 100%
+  font-family: sans-serif
+
+#container
+  min-width: 100%
+
+#header
+  text-align: center
+  padding: 15px
+
+  h1
+    padding-bottom: 15px
+
+#gameboard
+  margin: 0px auto
+  width: 500px
+  overflow: hidden
+  margin-top: 30px
+  margin-bottom: 70px
+  height: auto
+  border-radius: 10px
+  position:relative
+
+  .row
+    overflow: hidden
+    width: 320px
+    margin: 0px auto
+    margin-bottom: 5px
+
+    .matchView
+      float: right
+      width: 60px
+      height: 40px
+      //border: 1px solid black
+      margin-top : 10px
+      //display: none
+      div
+        width: 15px
+        height: 15px
+        float: left
+        margin-right: 10px
+        margin-bottom: 10px
+        border-radius: 100px
+        background-color: #edefef
+      //  border: 1px solid black
+
+  #row_0
+  //  padding-top: 40px
+
+  .blankPeg
+    box-sizing: border-box
+    width: 40px
+    height: 40px
+    float: left
+    margin: 10px
+    border-radius: 100px
+    border: 2px solid $emptyPeg
+    cursor: pointer
+    &:hover
+      background-color: #fef7e6
+  .locked
+    border : 3px solid darken($emptyPeg, 10)
+    background-color : darken(#fef7e6, 10)
+
+  #pegboard
+    overflow: hidden
+    position: absolute
+    display: none
+
+    .pegRow
+      width: 205px
+      height: 46px
+      overflow: hidden
+      background-color: transparentize(black, .6)
+      position: relative
+      border-radius: 5px
+
+    .pegSelector
+      width: 26px
+      height: 26px
+      border-radius: 100px
+      float: left
+      margin: 10px 4px 0px 4px
+      cursor: pointer
+      &:hover
+        border: 2px solid red
+        box-sizing: border-box
+
+#messageArea
+  width: 500px
+  margin: 0px auto
+  border: 3px solid $emptyPeg
+  border-radius: 20px
+  display: none
+  #winningSet
+    width: 270px
+    margin: 10px auto
+    overflow: hidden
+    div
+      width: 40px
+      height: 40px
+      margin: 10px
+      border: 2px solid $emptyPeg
+      border-radius: 100px
+      float: left
+  #textArea
+    width: 300px
+    margin: 0px auto
+    text-align: center
+  #button
+    display: block
+    width: 150px
+    height: 50px
+    margin: 15px auto
+    background-color: $emptyPeg
+    color: white
+    font-size: 27px
+    letter-spacing: 1px
+    text-align: center
+    border-radius: 10px
+    line-height: 50px
+    cursor: pointer
+    &:hover
+      background-color: lighten($emptyPeg, 10)

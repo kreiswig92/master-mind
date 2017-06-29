@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  height: 100%;
+  font-family: sans-serif; }
+
+#container {
+  min-width: 100%; }
+
+#header {
+  text-align: center;
+  padding: 15px; }
+  #header h1 {
+    padding-bottom: 15px; }
+
+#gameboard {
+  margin: 0px auto;
+  width: 500px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  height: auto;
+  border-radius: 10px; }
+  #gameboard .row {
+    overflow: hidden;
+    width: 320px;
+    margin: 0px auto;
+    margin-bottom: 5px; }
+    #gameboard .row .matchView {
+      float: right;
+      width: 60px;
+      height: 40px;
+      margin-top: 10px; }
+      #gameboard .row .matchView div {
+        width: 15px;
+        height: 15px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 100px;
+        background-color: #edefef; }
+  #gameboard .blankPeg {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 10px;
+    border-radius: 100px;
+    border: 2px solid #007677;
+    cursor: pointer; }
+    #gameboard .blankPeg:hover {
+      background-color: #fef7e6; }
+  #gameboard .locked {
+    border: 3px solid #004344;
+    background-color: #fce7b5; }
+  #gameboard #pegboard {
+    overflow: hidden;
+    position: absolute;
+    display: none; }
+    #gameboard #pegboard .pegRow {
+      width: 205px;
+      height: 46px;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: relative;
+      border-radius: 5px; }
+    #gameboard #pegboard .pegSelector {
+      width: 26px;
+      height: 26px;
+      border-radius: 100px;
+      float: left;
+      margin: 10px 4px 0px 4px;
+      cursor: pointer; }
+      #gameboard #pegboard .pegSelector:hover {
+        border: 2px solid red;
+        box-sizing: border-box; }
+
+#messageArea {
+  width: 500px;
+  margin: 0px auto;
+  border: 3px solid #007677;
+  border-radius: 20px;
+  display: none; }
+  #messageArea #winningSet {
+    width: 270px;
+    margin: 10px auto;
+    overflow: hidden; }
+    #messageArea #winningSet div {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      border: 2px solid #007677;
+      border-radius: 100px;
+      float: left; }
+  #messageArea #textArea {
+    width: 300px;
+    margin: 0px auto;
+    text-align: center; }
+  #messageArea #button {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 15px auto;
+    background-color: #007677;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 50px;
+    cursor: pointer; }
+    #messageArea #button:hover {
+      background-color: #00a9aa; }
